@@ -10,7 +10,6 @@ Player::Player(int x, int y, int xVel, int yVel) {
 		Coordinate coordinate;
 		coordinate.x = x;
 		coordinate.y = y + i;
-		//std::cout << coordinates.size() << std::endl;
 		coordinates.push_front(coordinate);
 	}
 }

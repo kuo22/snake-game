@@ -20,8 +20,6 @@ void Food::spawn() {
 			x = randX;
 			y = randY;
 			map->operator[](randY).operator[](randX) = 2;
-			std::cout << map->operator[](randY).operator[](randX) << std::endl;
-			//break;
 		}
 	} while (map->operator[](randY).operator[](randX) == 0);
 }

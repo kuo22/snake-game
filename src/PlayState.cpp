@@ -102,7 +102,6 @@ void PlayState::update(StateManager* game) {
 	player->setX(player->x + player->xVel);
 	player->setY(player->getY() + player->getYVel());
 	if (player->x < 0 || player->x >= game->w || player->y < 0 || player->y >= game->h || player->collideBody(map)) {
-		std::cout << "RESET" << std::endl;
 		reset(game);
 		return;
 	}
